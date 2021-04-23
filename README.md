@@ -1,8 +1,9 @@
 # SQL_StoredProcedure
 
-###Create
+### Create
 
 ```
+El mismo stored en vez de Create si ponemos ALTER, lo estariamos modificando, solo se puede crear una vez.
 
 CREATE PROCEDURE SP_Registrarusuario
 	/*PARAMETERS*/
@@ -30,3 +31,15 @@ END /* END */
 	GO
 
 ```
+
+# EXECUTE
+
+```
+EXECUTE SP_Registrarusuario 
+	@id = 111,
+	@nombre = 'jose',
+	@pass = '421',
+	@email = 'josee@jose.com',  
+	@idPerfil = 1,
+	@usuario = 'soyjose'
+```	
