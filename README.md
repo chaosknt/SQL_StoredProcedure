@@ -5,8 +5,9 @@
 ```
 
 CREATE PROCEDURE SP_Registrarusuario
-	@id int, @nombre VARCHAR(50), @pass VARCHAR(10), @email VARCHAR (20), @idPerfil int, @usuario varchar(20)
 	/*PARAMETERS*/
+	@id int, @nombre VARCHAR(50), @pass VARCHAR(10), @email VARCHAR (20), @idPerfil int, @usuario varchar(20)
+	
 AS
 BEGIN /* Inicio */
 	declare @msg varchar(120);
