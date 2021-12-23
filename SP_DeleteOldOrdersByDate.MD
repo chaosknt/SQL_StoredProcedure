@@ -2,6 +2,7 @@
 
 borra todas las Notificaciones y Pagos para todas las ordenes que sean menor o igual a una fecha pasada por parametro
 
+```
 CREATE  PROCEDURE SP_DeleteOldOrdersByDate @Date datetime2(7)
 
 AS
@@ -44,10 +45,13 @@ AS
 
 	END
   
-  
+ ``` 
   
   
   how to use:
   
+  ```
+  
   EXECUTE SP_DeleteOldOrdersByDate @date = '2021-09-23'
   
+```
